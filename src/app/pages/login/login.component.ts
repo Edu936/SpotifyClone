@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SpotifyService } from 'src/app/services/spotify.service';
 
 @Component({
   selector: 'app-login',
@@ -6,7 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
-  public redirect(): void {
-    alert('Oi');
+
+  constructor(
+    private _spotifyService: SpotifyService
+  ) {
+
+  }
+
+  public openLoginPage(): void {
+    window.location.href = this._spotifyService.obterUrlLogin();
   }
 }
