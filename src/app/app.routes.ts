@@ -4,7 +4,7 @@ import { autenticadoGuard } from './guards/autenticado.guard';
 export const router: Routes = [
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'player',
     pathMatch: 'full',
   },
   {
