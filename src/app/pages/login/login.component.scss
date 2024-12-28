@@ -1,0 +1,31 @@
+@import 'variables.scss';
+
+:host {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    flex-direction: column;
+    background-color: #222;
+
+    .base {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+
+        img {
+            width: 40%;
+        }
+
+        button {
+            border: 0;
+            padding: 20px;
+            cursor: pointer;
+            min-width: 200px;
+            font-size: 1.5rem;
+            color: $font-color;
+            border-radius: 500px;
+            background-color: $primary-color;
+        }
+    }
+}

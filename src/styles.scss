@@ -1,14 +1,24 @@
-@import 'variables.scss';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-html, body {
-    margin: 0;
-    padding: 0;
-    background: $background-color;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: $background-color;
 }
 
 * {
-    color: $font-color;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+  color: $font-color;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.flex {
+  display: flex;
+
+  &-center {
+    align-items: center;
+    justify-content: center;
+  }
 }

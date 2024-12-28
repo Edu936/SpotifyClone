@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
+import { router } from './app.routes';
 
 @NgModule({
   declarations: [
@@ -11,6 +12,7 @@ import { RouterOutlet } from '@angular/router';
   imports: [
     BrowserModule,
     RouterOutlet,
+    RouterModule.forRoot(router)
   ],
   providers: [],
   bootstrap: [AppComponent]
