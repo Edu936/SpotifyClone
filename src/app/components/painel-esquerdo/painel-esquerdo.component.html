@@ -32,8 +32,10 @@
     </span>
     <div class="playlist-scroll">
         <app-button-menu
-            [description]="'Play 01'"
-            [select]="true"
+            *ngFor="let item of playList"
+            [description]="item.nome"
+            [select]="playlistSelect === item.id"
+            (click)="changePlaylist(item.id)"
         >
             <fa-icon [icon]="playListIcone"></fa-icon>
         </app-button-menu>
