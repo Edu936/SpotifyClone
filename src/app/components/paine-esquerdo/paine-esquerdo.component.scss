@@ -8,6 +8,8 @@ $h-spotify-logo: 120px;
     min-height: 100vh;
     overflow-y: hidden;
     flex-direction: column;
+    background-color: rgb(8, 8, 8);
+    box-shadow: 1px 1px 25px rgb(0, 0, 0);
 
     .menus {
         flex-grow: 1;
