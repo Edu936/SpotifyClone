@@ -30,9 +30,30 @@ $m-entre-menus: 10px;
     .menu-container {
       width: 100%;
 
-      &.opcoes {
+      &.flex {
+        align-items: center;
         flex-direction: column;
+        justify-content: flex-start;
+      }
+
+      &.opcoes {
         min-height: $h-menu-opcoes;
+
+        * {
+          margin-bottom: $m-entre-menus;
+        }
+      }
+      
+      .playlist-title {
+        margin: 10px 0px;
+        font-weight: 700;
+        font-size: .7rem;
+        color: $font-title;
+        align-self: flex-start;
+      }
+
+      .playlist-scroll {
+        width: 100%;
 
         * {
           margin-bottom: $m-entre-menus;

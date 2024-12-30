@@ -1,5 +1,4 @@
-<button type="button">
-    <span>{{description}}</span>
+<button type="button" [class.button-active]="select" (click)="onClick()">
     <ng-content></ng-content>
-
+    <span>{{description}}</span>
 </button>

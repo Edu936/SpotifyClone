@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PaineEsquerdoComponent } from './paine-esquerdo.component';
+import { PainelEsquerdoComponent } from './painel-esquerdo.component';
 
 describe('PaineEsquerdoComponent', () => {
-  let component: PaineEsquerdoComponent;
-  let fixture: ComponentFixture<PaineEsquerdoComponent>;
+  let component: PainelEsquerdoComponent;
+  let fixture: ComponentFixture<PainelEsquerdoComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [PaineEsquerdoComponent]
+      declarations: [PainelEsquerdoComponent]
     });
-    fixture = TestBed.createComponent(PaineEsquerdoComponent);
+    fixture = TestBed.createComponent(PainelEsquerdoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

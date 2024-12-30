@@ -6,14 +6,14 @@ import { PlayerRouter } from './player.routes';
 // Components 
 import { PlayerComponent } from './player.component';
 import { ButtonMenuComponent } from 'src/app/components/button-menu/button-menu.component';
-import { PaineEsquerdoComponent } from 'src/app/components/paine-esquerdo/paine-esquerdo.component';
+import { PainelEsquerdoComponent } from 'src/app/components/painel-esquerdo/painel-esquerdo.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
     PlayerComponent,
     ButtonMenuComponent,
-    PaineEsquerdoComponent,
+    PainelEsquerdoComponent,
   ],
   imports: [
     CommonModule,
